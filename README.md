@@ -160,6 +160,7 @@ Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
 
 Loubna ALFIDI - [Github](https://github.com/Loubna-ALFIDI) / [Twitter](https://twitter.com/loubna_alfidi)
+
 Hicham FHAD - [Github](https://github.com/HichamLuffy) / [Twitter](https://twitter.com/D_Hicham2k)
 
 Second part of Airbnb: Joann Vuong
