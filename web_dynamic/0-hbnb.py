@@ -13,6 +13,8 @@ app = Flask(__name__)
 # app.jinja_env.lstrip_blocks = True
 
 
+cache_id = str(uuid4())
+
 @app.teardown_appcontext
 def close_db(error):
     """ Remove the current SQLAlchemy Session """
@@ -39,9 +41,9 @@ def hbnb():
                            states=st_ct,
                            amenities=amenities,
                            places=places,
-                           cache_id=uuid4())
+                           cache_id=cache_id())
 
 
 if __name__ == "__main__":
     """ Main Function """
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=True)
