@@ -19,14 +19,12 @@ $(document).ready(function () {
   });
 
   // Function to update API status
-  $.getJSON('http://0.0.0.0:5001/api/v1/status/', function(data) {
-          // Check if status is "OK"
-          if (data.status === 'OK') {
-              $('div#api_status').addClass('available'); // Add class available
-          } else {
-              $('div#api_status').removeClass('available'); // Remove class available
-          }
-      });
-  // Set interval to update API status every 5 seconds
-  setInterval(updateAPIStatus, 5000);
+  $.get('http://localhost:5001/api/v1/status', function(data) {
+    // Check if status is "OK"
+    if (data.status === 'OK') {
+      $('div#api_status').addClass('available');
+    } else {
+      $('div#api_status').removeClass('available');
+    }
+  });
 });
