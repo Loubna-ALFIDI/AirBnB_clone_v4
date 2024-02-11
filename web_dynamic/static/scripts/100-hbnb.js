@@ -24,7 +24,7 @@ window.addEventListener('load', function () {
   let stateIds = {};
   let cityIds = {};
 
-  $('.filters button').click(function () {
+function getdata () {
     $.ajax({
       type: 'POST',
       url: 'http://localhost:5001/api/v1/places_search/',
@@ -80,7 +80,9 @@ window.addEventListener('load', function () {
         $('section.places').append(template);
       }
     });
-  });
+  }
+$('.filters button').click(getdata());
+getdata();
 
   $('.stateCheckBox').click(function () {
     if ($(this).prop('checked')) {
